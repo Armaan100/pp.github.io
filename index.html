@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>PING PONG GAME</title>
+	<style>
+		body{
+			background-color:#D0BDF4;
+		}
+		.one{
+			position: absolute;
+			left: 100px;
+			color: black;
+		}
+		.two{
+			color: black;
+			position: absolute;
+			right: 100px;
+		}
+		canvas{
+			width:600px;
+			height:500px;
+			border: 3px solid black;
+			position: absolute;;
+			left: 390px;
+			background-color: #e5eaf5; 
+		}
+		.text1{
+			font-size: 20px;
+			position: absolute;
+			left: 10px;
+			top: 120px;
+			font-weight: bold;
+		}
+		.text2{
+			font-size: 20px;
+			position: absolute;
+		    left: 1000px;
+			top: 110px;
+			font-weight: bold;
+		}
+		button{
+			position: absolute;
+			left: 400px;
+			top: 200px;
+			font-size: 80px;
+			color: rgb(145, 34, 34);
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1 class="one">Bouncing Ball</h1>
+		<h1 class="two">Bouncing Ball</h1>
+	</header>
+
+	<div class="text1">
+		You are <font color="red">Player1</font>.<br><br>You have to press the "W" key to move up<br>and "S" key to move down.<br><br>
+		You have to save the ball.<br><br> If you miss the ball then you will lose the<br> game and if your opponent misses the ball<br> them you(Player1 WINS).
+	</div>
+
+	
+	<div class="text2">
+		You are <font color="red">player2</font>.<br><br>You have to press the "Arrow Up" key to move up and "Arrow down" key to move down.<br><br>
+		You have to save the ball.<br><br> If you miss the ball then you will lose the<br> game and if your opponent misses the ball<br> them you(Player2 WINS).
+	</div>
+
+	
+	<canvas id = "cancan" class = "cancon"></canvas>
+	<!--<button onclick="animation()">START</button>-->
+
+	<script src="pingPong.js"></script>
+
+</body>
+</html>
